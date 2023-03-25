@@ -1,148 +1,222 @@
-<!DOCTYPE HTML>
-<html>
+<em>
+    <!DOCTYPE HTML>
+    <html>
+
     <head>
         <title>Radio App - Documentation by WRTeam</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon"  type="image/png"  href="images/app_icon.png" />
+        <link rel="icon" type="image/png" href="images/app_icon.webp" />
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
+
     <body>
         <section id="header">
             <header>
-                <span class="image avatar"><img src="images/app_icon.png" alt="" /></span>
-                <h4 id="logo"><a href="#">PHP Radio App Admin Panel</a></h4>
+                <span class="image avatar"><img src="images/app_icon.webp" alt="" /></span>
+                <h4 id="logo"><a href="#">Radio App Admin Panel Documentation</a></h4>
             </header>
             <nav id="nav">
                 <ul>
-                    <li><a href="#one" class="active">Installation</a></li>
-                    <li><a href="https://wrteam.in/" target="_blank">Support</a></li>
+                    <li><a href="#installation" style="color:#ff7c81">Configure on your server</a></li>
+                    <li><a href="#notification-management" style="color:#ff7c81">Notification Management</a></li>
+                    <li><a href="#slider" style="color:#ff7c81">Manage Slider</a></li>
+                    <li><a href="#category" style="color:#ff7c81">Manage Category</a></li>
+                    <li><a href="#manage-radio" style="color:#ff7c81">Manage Radio Station</a></li>
+                    <li><a href="#radio-reports" style="color:#ff7c81">Radio Station Report</a></li>
+                    <li><a href="#pp" style="color:#ff7c81">Set Privacy Policy</a></li>
+                    <li><a href="#tc" style="color:#ff7c81">Set Terms Conditions</a></li>
+                    <li><a href="#about_us" style="color:#ff7c81">Set About Us</a></li>
+                    <li><a href="#support" style="color:#ff7c81">Support</a></li>
+                    <li><a href="#rating" style="color:#ff7c81">Rating</a></li>
                 </ul>
             </nav>
-            <footer>
-                <ul class="icons">
-                    <li><a href="#" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" target="_blank" class="icon fa fa-linkedin"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" target="_blank" class="icon fa fa-google-plus"><span class="label">Email</span></a></li>
-                </ul>
-            </footer>
         </section>
         <div id="wrapper">
             <div id="main">
                 <section id="one">
                     <div class="container">
                         <header class="major">
-                            <h2>PHP Radio App Admin Panel</h2>
+                            <h3>Radio App Admin Panel Documentation</h3>
                         </header>
                         <div class="borderTop">
-                            <p><a style="color:#06F">Table of Contents</a></p>
-                            <ol class="alpha">
-                                <li><a href="#installation">Configure on your server</a></li>
-                                <li><a href="#notification-management">Notification Management</a></li>
-                                <li><a href="#slider">Manage Slider</a></li>
-                                <li><a href="#category">Manage Category</a></li>
-                                <li><a href="#manage-radio">Manage Radio Station</a></li>
-                                <li><a href="#radio-reports">Radio Station Report</a></li>                              
-                                <li><a href="#pp">Set Privacy Policy</a></li>
-                                <li><a href="#tc">Set Terms Conditions</a></li>
-                                <li><a href="#about_us">Set About Us</a></li>
-                            </ol>
+                            <div class="span-6 colborder info prepend-1">
+                                <p class="prepend-top">
+                                    Company: WRTeam <br>
+                                    Contact: <a href="https://codecanyon.net/user/wrteam" style='color:#f90849'
+                                        target="_blank">CodeCanyon
+                                        Profile</a> </strong> </p>
+                            </div>
                             <div class="span-12 last">
-                                <p class="prepend-top append-0">Thank you for purchasing the app. If you have any questions that are beyond the scope of this help file, please feel free to message me via my user page contact form <a href="mailto:info@wrteam.in" style='color:#06F'>here</a>. Thank you so much!</p>
+                                <p class="prepend-top append-0">Thank you for purchasing the code. If you have any
+                                    questions
+                                    that are
+                                    beyond the scope of this help file, please feel free to message me via my user page
+                                    contact form <a href="https://codecanyon.net/user/wrteam" style='color:#3c55d1'
+                                        target="_blank">here</a>. Thanks so
+                                    much!</p>
                             </div>
                         </div>
-                        
+
                         <!-- Configure on your server -->
                         <h3 id="installation"> 1. How to Configure Database & Back-end on Your Server?</h3>
                         <ol>
-                            <li>First of all find the  <b>Radio</b> folder from the downloaded package and upload to your server.</li>
+                            <li>First of all find the <b>Radio</b> folder from the downloaded package and upload to your
+                                server.</li>
                             <li>Create a new database from cPanel</li>
                             <li>Create new user for the database & give all the privileges to the user</li>
                             <li>Import the database file 'radio.sql' to your PHPMYADMIN </li>
                             <li>Open File Manager or FTP or File Explorer</li>
-                            <li>If you are using SSL (HTTPS) than go to <code>'application/config/'</code> directory and Open <code>'config.php'</code> file in PHP Code and Set http to https on line no - 27.</li>
-                            <li>Go To <code>'application/config/'</code> directory and Open <code>'database.php'</code> file in PHP Code                           
+                            <li>If you are using SSL (HTTPS) than go to <code>'application/config/'</code> directory and
+                                Open <code>'config.php'</code> file in PHP Code and Set http to https on line no - 27.
+                            </li>
+                            <li>Go To <code>'application/config/'</code> directory and Open <code>'database.php'</code>
+                                file
+                                in PHP Code
                             <li>Set database credentials with your credentials on line number - 51,52,53,54 <br>
-                                <blockquote>$db['default']['hostname'] = 'localhost';  // Change as required<br>
-                                    $db['default']['username'] = "mydb_user";  // Change as required<br>
-                                    $db['default']['password'] = "mydb_user_password";  // Change as required<br>
-                                    $db['default']['database'] = "myradiopanel_db";	// Change as required</blockquote>
+                                <blockquote>$db['default']['hostname'] = 'localhost'; // Change as required<br>
+                                    $db['default']['username'] = "mydb_user"; // Change as required<br>
+                                    $db['default']['password'] = "mydb_user_password"; // Change as required<br>
+                                    $db['default']['database'] = "myradiopanel_db"; // Change as required</blockquote>
                             </li>
                         </ol>
-                        <p>Thats it! Now you are ready to run your first Radio App : <b>http://radio.wrteam.in</b></p>
+                        <p>Thats it! Now you are ready to run your first Radio App</p>
                         <b>Default Login Details</b><br>
                         User: admin<br>
-                        Pass: admin<br><br>
+                        Pass: admin123<br><br>
                         <p>Change the default Password of Radio admin panel after successful installation </p>
-                        <img src="images/change-password.png" alt="image"/> 
-                        <br/>
+                        <img src="images/change-password.webp" alt="image" />
+                        <br />
                         <p>Change the Logo of Radio admin panel after successful installation </p>
-                        <img src="images/change-profile.png" alt="image"/> 
-                        
+                        <img src="images/change-profile.webp" alt="image" />
+
                         <!-- Notification Management -->
                         <h3 id="notification-management"> 2. Notification Management</h3>
-                        <p>First Of all,we need to set the FCM server key from <a href="https://console.firebase.google.com" target="_blank">Firebase console</a></p>
-                        <img src="images/notification-setting.png" alt="image"/>
-                        <p>After updating or setting up the FCM server key,<br>Notifications can be send to All Users at a time to their respective email-id's</p>
-                        <img src="images/send-notification.png" alt="image"/>
-                        
+                        <p>First Of all,we need to set the FCM server key from <a
+                                href="https://console.firebase.google.com" target="_blank">Firebase console</a></p>
+                        <img src="images/notification-setting.webp" alt="image" />
+                        <p>After updating or setting up the FCM server key,<br>Notifications can be send to All Users at
+                            a
+                            time to their respective email-id's</p>
+                        <img src="images/send-notification.webp" alt="image" />
+
                         <!-- Manage Slider -->
                         <h3 id="slider"> 3. Manage Slider</h3>
-                        <p> Create Slider with Category, Radio Station, Title & image. You can view, Edit & Delete the list of Slider.</p>
-                        <img src="images/slider.png" alt="image"/>
+                        <p> Create Slider with Category, Radio Station, Title & image. You can view, Edit & Delete the
+                            list
+                            of Slider.</p>
+                        <img src="images/slider.webp" alt="image" />
                         <div class="section_bdr"></div>
-                        
+
                         <!-- Manage Category -->
                         <h3 id="category"> 4. Manage Category</h3>
-                        <p> Create Category with Category Name & icon/image. Icon/Image size must be less than 100kb. You can view, Edit & Delete the list of Categories. </p>
-                        <img src="images/category.png" alt="image"/>
+                        <p> Create Category with Category Name & icon/image. Icon/Image size must be less than 100kb.
+                            You
+                            can view, Edit & Delete the list of Categories. </p>
+                        <img src="images/category.webp" alt="image" />
                         <div class="section_bdr"></div>
-                        
+
                         <!-- Manage Radio Station --->
                         <h3 id="manage-radio"> 5. Manage Radio Station</h3>
-                        <p>Create Radio Station. You can view, Edit & Delete the list of Radio Station. </p>    
-                        <img src="images/radio-station.png" alt="image"/>
-                        
+                        <p>Create Radio Station. You can view, Edit & Delete the list of Radio Station. </p>
+                        <img src="images/radio-station.webp" alt="image" />
+
                         <!-- Radio Station Report -->
                         <h3 id="radio-reports"> 6. Radio Station Report</h3>
-                        <p>In side the Radio Station report section you will able to see all the radio station which are reported by the users. </p>
-                        <p>From here you can easily delete that report just by clicking on delete Icon.</p>    
-                        <img src="images/radio-station-report.png"/>
-                        <div class="section_bdr"></div>                     
-                        
+                        <p>In side the Radio Station report section you will able to see all the radio station which are
+                            reported by the users. </p>
+                        <p>From here you can easily delete that report just by clicking on delete Icon.</p>
+                        <img src="images/radio-station-report.webp" />
+                        <div class="section_bdr"></div>
+
                         <h3 id="pp">7. Set Privacy Policy</h3>
                         <p>Set Privacy Policy for your website and app.</p>
-                        <img src="images/pp.png"/>
+                        <img src="images/pp.webp" />
                         <div class="section_bdr"></div>
-                        
+
                         <h3 id="tc">8. Set Terms Conditions</h3>
                         <p>Set Terms Conditions for your website and app.</p>
-                        <img src="images/tc.png"/>
+                        <img src="images/tc.webp" />
                         <div class="section_bdr"></div>
-                        
+
                         <h3 id="about_us">9. About Us Content</h3>
                         <p>Set and manage your about us content for app.</p>
-                        <img src="images/about-us.png"/>
+                        <img src="images/about-us.webp" />
 
                 </section>
-                
-                <section id="credits">
-                    <div class="container">
-                        <p class="append-bottom alt large"><strong><a style="color:#06F" href='https://wrteam.in/' target='_blank'>WRTeam</a></strong></p>
-                        <p><a style="color:#06F" href="#one">Go To Table of Contents</a></p><div class="section_bdr"></div>
-                        <!-- </ul>-->
+                <section id="support">
+                    <div class="container"> <br>
+                        <h2>Need Support?</h2>
+                        <p>Its our pleasure to serve our service and support. please contact our support team.</p>
+                        <p>Customer Support : <a href="https://join.skype.com/invite/BZ8brCpb7far" target="_blank"
+                                style='color:#3c55d1'>Vimal Gondariya</a></p>
+
+                        <p>To help our customers, we constantly be in touch with every customer if they need any
+                            assistance
+                            regarding our product.
+                            We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) –
+                                We
+                                are a
+                                Team located in India – Asia.</strong></p>
+                        <p>Typically we reply our customers for all the questions and queries within 24 hours of time
+                            via
+                            comments, support forum or emails.</p>
+
+                        <div class="section_bdr"></div>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="rating">
+                    <div class="container"> <br>
+                        <h2>Rating </h2>
+                        <p>If you like our app, we will highly appreciate if you can provide us a rating of 5. You can
+                            rate
+                            us
+                            from your CodeCanyon Menu > Download page.</p>
+                        <div class="section_bdr"></div>
+                        </ul>
                     </div>
                 </section>
             </div>
+
+            <!-- Footer -->
+            <section id="footer">
+                <div class="container">
+                    <ul class="copyright">
+                        <li>
+                            <h3><span style="color:#0e8bcb;font-style:italic">WRTeam</span>
+                        </li>
+                        <!--<li><a href="http://www.viaviweb.in" target="_blank"><span style="color:#9f9f9f;font-style:italic">Viavi Webtech</span></a></li>-->
+                    </ul>
+                </div>
+            </section>
         </div>
-        <!-- Scripts --> 
-        <script src="assets/js/jquery.min.js"></script> 
-        <script src="assets/js/jquery.scrollzer.min.js"></script> 
-        <script src="assets/js/jquery.scrolly.min.js"></script> 
-        <script src="assets/js/skel.min.js"></script> 
-        <script src="assets/js/util.js"></script> 
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]--> 
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollzer.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
         <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                    } else {
+                        $('.scrollup').fadeOut();
+                    }
+                });
+                $('.scrollup').click(function () {
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+            });
+        </script>
+        <div><a href="#" class="scrollup">Scroll</a></div>
     </body>
-</html>
+
+    </html>
+</em>
