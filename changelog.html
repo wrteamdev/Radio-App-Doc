@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .collapsible {
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #37a279;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Change Log</h2>
+
+    <button class="collapsible">Version: 1.0.5 - 27 Mar 2023</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Code compatible with Flutter v3.7.3</li>
+            <li>Library Updated</li>
+            <li>Compatible with Android 13</li>
+        </ui><br>
+    </div>
+    <br>
+
+
+    <button class="collapsible">Version: 1.0.5 - 18 June 2022</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Upgraded to Flutter 3.0</li>
+        </ui><br>
+    </div>
+    <br>
+
+    <button class="collapsible">Version: 1.0.4 - 18 June 2022</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Compatible with Android version 12</li>
+            <li>Update and improvements</li>
+        </ui><br>
+    </div>
+    <br>
+
+    <button class="collapsible">Version: 1.0.3 - 17 Dec 2021</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Upgraded with new player + IOS compatible player</li>
+        </ui><br>
+    </div>
+    <br>
+
+    <button class="collapsible">Version: 1.0.2 - 11 Nov 2021</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Upgraded to Flutter 2.5</li>
+        </ui><br>
+    </div>
+    <br>
+    <button class="collapsible">Version 1.0.1 - 20 May 2021</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Upgraded to Flutter 2.2</li>
+            <li>Added media Notification</li>
+            <li>Performance Improved</li>
+            <li>Bug Fixed</li>
+        </ui><br>
+    </div>
+    <br>
+
+    <button class="collapsible">Version 1.0.0 - 20 Fab 2020</button>
+    <div class="content">
+        <br>
+        <ui>
+            <li>Initial version</li>
+        </ui><br>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
