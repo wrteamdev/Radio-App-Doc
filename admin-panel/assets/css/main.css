@@ -1722,6 +1722,8 @@ a {
 	border-bottom: 0px;
 	color: inherit;
 	text-decoration: none;
+	color: #3c55d1;
+	text-decoration: underline;
 }
 
 a:hover {

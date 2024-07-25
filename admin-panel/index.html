@@ -1,350 +1,354 @@
-<em>
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Radio App - Documentation by WRTeam</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<link rel="icon" type="image/png" href="images/app_logo.png" />
-			<link rel="stylesheet" href="assets/css/main.css" />
-		</head>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Radio App - Documentation by WRTeam</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="images/app_logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
-		<body>
-			<section id="header" style="overflow-y: auto; max-height: 100vh">
-				<header>
-					<span class="image avatar"><img src="images/app_logo.png" alt="" /></span>
-					<h4 id="logo"><a href="#">Radio App Admin Panel Documentation</a></h4>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#installation">Installation Steps</a></li>
-						<li><a href="#settings">System Settings</a></li>
-						<li><a href="#city">Manage City</a></li>
-						<li><a href="#category">Manage Category</a></li>
-						<li><a href="#radiostation">Manage Radio Station</a></li>
-						<li><a href="#slider">Manage Slider</a></li>
-						<li><a href="#notification">Notification Management</a></li>
-						<li><a href="#radio-reports">Radio Station Report</a></li>
-						<li><a href="#pp">Set Privacy Policy</a></li>
-						<li><a href="#tc">Set Terms Conditions</a></li>
-						<li><a href="#about_us">Set About Us</a></li>
-						<li><a href="#support">Support</a></li>
-						<li><a href="#rating">Rating</a></li>
-					</ul>
-				</nav>
-			</section>
+	<body data-spy="scroll" data-target=".nav" data-offset="125">
+		<section id="header" style="overflow-y: auto; max-height: 100vh">
+			<header>
+				<span class="image avatar"><img src="images/app_logo.png" alt="" /></span>
+				<h4 id="logo"><a href="#">Radio App Admin Panel Documentation</a></h4>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#installation">Installation Steps</a></li>
+					<li><a href="#settings">System Settings</a></li>
+					<li><a href="#city">Manage City</a></li>
+					<li><a href="#category">Manage Category</a></li>
+					<li><a href="#radiostation">Manage Radio Station</a></li>
+					<li><a href="#slider">Manage Slider</a></li>
+					<li><a href="#notification">Notification Management</a></li>
+					<li><a href="#radio-reports">Radio Station Report</a></li>
+					<li><a href="#pp">Set Privacy Policy</a></li>
+					<li><a href="#tc">Set Terms Conditions</a></li>
+					<li><a href="#about_us">Set About Us</a></li>
+					<li><a href="#support">Support</a></li>
+					<li><a href="#rating">Rating</a></li>
+				</ul>
+			</nav>
+		</section>
 
-			<div id="wrapper">
-				<div id="main">
-					<section id="one">
-						<div class="container">
-							<header class="major">
-								<h3>Radio App Admin Panel Documentation</h3>
-							</header>
-							<div class="borderTop">
-								<div class="span-6 colborder info prepend-1">
-									<p class="prepend-top">
-										Company:
-										<a
-											href="https://codecanyon.net/user/wrteam"
-											style="color: #3c55d1"
-											target="_blank"
-											>WRTeam</a
-										>
-										<br />
-										Skype:
-										<a href="https://join.skype.com/invite/qbmElsg7mSTd" style="color: #3c55d1"
-											>purnima.wrteam@gmail.com</a
-										>
-									</p>
-								</div>
-								<div class="span-12 last">
-									<p class="prepend-top append-0">
-										For questions beyond the scope of this documentation, please reach out to our
-										<a href="#support">support team</a> via Skype or the user page contact form.
-									</p>
-								</div>
-							</div>
-
-							<!-- Configure on your server -->
-							<h3 id="installation">Installation Steps</h3>
-							<h3>1. Installation Screen</h3>
-							<p>
-								The Initial screen of the Installation process gathers essential data required
-								before commencing the installation. This typically includes collecting information
-								such as database credentials and any other configuration settings necessary for
-								setting up the application.
-							</p>
-							<img src="images/installation1.png" alt="image" />
-							<br />
-							<br />
-
-							<h3>2. Server Requirements & Extensions</h3>
-							<p>
-								If PHP version is lower than 8.0 or any extension is not installed then it will be
-								highlighted using Red color. So you need to make sure that your server meets the all
-								requirement.
-							</p>
-							<img src="images/installation2.png" alt="image" />
-							<br />
-							<br />
-
-							<h3>3. Permission Screen</h3>
-							<p>
-								Make sure this folder have read & write permissions. If not then assign this folders
-								read & write permissions.
-							</p>
-							<img src="images/installation3.png" alt="image" />
-							<br />
-							<br />
-
-							<h3>4. Purchase Code Validation</h3>
-							<p>
-								Here you'll have to insert the purchase code obtained from CodeCanyon to
-								authenticate your purchase and authorize your server to access the services. To find
-								your Purchase code you can visit this link:
-								<a
-									style="color: #3c55d1"
-									href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
-									target=" _blank"
-									>Where is My Purchase code?</a
-								>
-							</p>
-							<img src="images/installation4.png" alt="image" />
-							<br />
-							<br />
-
-							<h3>5. Database Configuration Screen</h3>
-							<p>
-								Before adding the database configuration, ensure that the nd_pdo_mysql extension is
-								enabled in your PHP version. This extension is necessary for connecting to MySQL
-								databases using PDO (PHP Data Objects).
-							</p>
-							<img src="images/installation5.png" alt="image" />
-
-							<br /><br />
-
-							<h3>6. Database Connection Status</h3>
-							<p>
-								If the database connection is successfully established, it typically indicates this
-								through a confirmation message or status indicator, such as "Connection successful"
-								or a green checkmark icon.
-							</p>
-							<img src="images/installation6.png" alt="image" />
-
-							<br /><br />
-
-							<h3>7. Migration Files Loaded</h3>
-							<p>
-								After successfully establishing the database connection, the migration process
-								begins, transferring database tables to your database.
-							</p>
-							<img src="images/installation7.png" alt="image" />
-
-							<br /><br />
-
-							<h3>8. Final installation Screen</h3>
-							<p>
-								If everything is configured successfully then your Admin panel has been installed
-								successfully.You can login as Admin using the credentials provided here.
-							</p>
-							<img src="images/installation8.png" alt="image" />
-
-							<p>Thats it! Now you are ready to run your first Radio App</p>
-							<b>Default Login Details</b><br />
-							User: admin<br />
-							Pass: admin@123<br /><br />
-
-							<!-- Notification Management -->
-							<h3 id="settings">2. System Settings</h3>
-							<p>
-								The Settings Section allows Admin to customize key aspects of the application. From
-								changing basic information like app name, email, and timezone to personalizing
-								visual elements such as theme color, logo, and login page background image.
-								Additionally, admins can enable features like city mode, maintenance mode, and input
-								FCM server key for push notifications.
-							</p>
-							<video
-								style="width: 100%"
-								src="images/system_settings.webm"
-								alt="image"
-								controls></video>
-							<br />
-							<br />
-
-							<p>
-								After Changing System Settings Admin can change the Admin Panel Password from
-								Profile > Change Password.
-							</p>
-							<img src="images/changePassword.png" alt="image" />
-							<br />
-							<br />
-
-							<!-- Manage City -->
-							<h3 id="city">3. Manage City</h3>
-							<p>Admin can add city , edit city name, delete city and show list of cities,</p>
-							<img src="images/city.png" alt="image" />
-							<div class="section_bdr"></div>
-							<br />
-							<br />
-
-							<!-- Manage Category -->
-							<h3 id="category">4. Manage Category</h3>
-							<p>
-								Admin can create Category with Category Name & image. <br />
-								Image size must be less than 100kb.<br />
-								Admin can add, view, edit & delete the list of Categories.
-							</p>
-							<img src="images/category.png" alt="image" />
-							<div class="section_bdr"></div>
-							<br />
-							<br />
-
-							<!-- Manage Radio Station --->
-							<h3 id="radiostation">5. Manage Radio Station</h3>
-							<p>Admin can create Radio Station, view, edit & delete the list of Radio Station.</p>
-							<img src="images/radiostation.png" alt="image" />
-							<br />
-							<br />
-
-							<!-- Manage Slider -->
-							<h3 id="slider">6. Manage Slider</h3>
-							<p>
-								Create Slider with Category, Radio Station, Title & image. You can view, Edit &
-								Delete the list of Slider.
-							</p>
-							<img src="images/slider.png" alt="image" />
-							<div class="section_bdr"></div>
-							<br />
-							<br />
-
-							<!-- Notification Management -->
-							<h3 id="notification">7. Notification Management</h3>
-							<p>
-								First of all, admin need to set the FCM server key in System Settings<a
-									href="https://console.firebase.google.com"
-									target="_blank">
-									Firebase console</a
-								>
-							</p>
-							<img src="images/notification1.png" alt="image" />
-							<br />
-							<br />
-
-							<p>
-								After updating or setting up the FCM server key,<br />Notifications can be send to
-								All Users at a time to their respective email-id's
-							</p>
-							<img src="images/notification2.png" alt="image" />
-							<br />
-							<br />
-
-							<!-- Radio Station Report -->
-							<h3 id="radio-reports">8. Radio Station Report</h3>
-							<p>
-								In side the Radio Station report section you will able to see all the radio station
-								which are reported by the users.
-							</p>
-							<p>From here you can easily delete that report just by clicking on delete Icon.</p>
-							<img src="images/radiostationreport.png" />
-							<div class="section_bdr"></div>
-							<br />
-							<br />
-
-							<h3 id="pp">9. Set Privacy Policy</h3>
-							<p>Set Privacy Policy for your website and app.</p>
-							<img src="images/privacy.png" />
-							<div class="section_bdr"></div>
-							<br />
-							<br />
-
-							<h3 id="tc">10. Set Terms Conditions</h3>
-							<p>Set Terms Conditions for your website and app.</p>
-							<img src="images/termscondition.png" />
-							<div class="section_bdr"></div>
-							<br />
-							<br />
-
-							<h3 id="about_us">11. About Us Content</h3>
-							<p>Set and manage your about us content for app.</p>
-							<img src="images/aboutus.png" />
-							<br />
-							<br />
-						</div>
-					</section>
-
-					<section id="support">
-						<div class="container">
-							<h2>Need Help?</h2>
-							<p>
-								Our dedicated support team is here to assist you! Feel free to reach out with any
-								questions or concerns regarding our products.
-							</p>
-							<h5>Contact Us:</h5>
-							<li>
-								Skype:
-								<a href="https://join.skype.com/invite/qbmElsg7mSTd" style="color: #3c55d1"
-									>Purnima Bhattacharya</a
-								>
-							</li>
-							<h5>Support Hours:</h5>
-							<p>Monday - Friday: 9:00 AM - 6:00 PM IST (GMT+5.30)</p>
-							<h5>Typical Response Time:</h5>
-							<p>We strive to respond to all inquiries within 24 hours via email.</p>
-
-							<div class="section_bdr"></div>
-						</div>
-					</section>
-
-					<section id="rating">
-						<div class="container">
-							<br />
-							<h2>Rating</h2>
-							<p>
-								If you like our app, we will highly appreciate if you can provide us a rating of 5.
-								You can rate us from your CodeCanyon Menu > Download page.
-							</p>
-							<div class="section_bdr"></div>
-						</div>
-					</section>
-				</div>
-
-				<!-- Footer -->
-				<section id="footer">
+		<div id="wrapper">
+			<div id="main">
+				<section id="one">
 					<div class="container">
-						<ul class="copyright">
-							<li>
-								<h3><span style="color: #b0506a">WRTeam</span></h3>
-							</li>
-						</ul>
+						<header class="major">
+							<h3>Radio App Admin Panel Documentation</h3>
+						</header>
+						<div class="borderTop">
+							<div class="span-6 colborder info prepend-1">
+								<p class="prepend-top">
+									Company:
+									<a
+										href="https://codecanyon.net/user/wrteam"
+										style="color: #3c55d1"
+										target="_blank"
+										>WRTeam</a
+									>
+									<br />
+									Skype:
+									<a href="https://join.skype.com/invite/qbmElsg7mSTd" style="color: #3c55d1"
+										>purnima.wrteam@gmail.com</a
+									>
+								</p>
+							</div>
+							<div class="span-12 last">
+								<p class="prepend-top append-0">
+									For questions beyond the scope of this documentation, please reach out to our
+									<a href="#support">support team</a> via Skype or the user page contact form.
+								</p>
+							</div>
+						</div>
+
+						<!-- Configure on your server -->
+						<h3 id="installation">Installation Steps</h3>
+						<h3>1. Installation Screen</h3>
+						<p>
+							The Initial screen of the Installation process gathers essential data required before
+							commencing the installation. This typically includes collecting information such as
+							database credentials and any other configuration settings necessary for setting up the
+							application.
+						</p>
+						<img src="images/installation1.png" alt="image" />
+						<br />
+						<br />
+
+						<h3>2. Server Requirements & Extensions</h3>
+						<p>
+							If PHP version is lower than 8.0 or any extension is not installed then it will be
+							highlighted using Red color. So you need to make sure that your server meets the all
+							requirement.
+						</p>
+						<img src="images/installation2.png" alt="image" />
+						<br />
+						<br />
+
+						<h3>3. Permission Screen</h3>
+						<p>
+							Make sure this folder have read & write permissions. If not then assign this folders
+							read & write permissions.
+						</p>
+						<img src="images/installation3.png" alt="image" />
+						<br />
+						<br />
+
+						<h3>4. Purchase Code Validation</h3>
+						<p>
+							Here you'll have to insert the purchase code obtained from CodeCanyon to authenticate
+							your purchase and authorize your server to access the services. To find your Purchase
+							code you can visit this link:
+							<a
+								style="color: #3c55d1"
+								href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-"
+								target=" _blank"
+								>Where is My Purchase code?</a
+							>
+						</p>
+						<img src="images/installation4.png" alt="image" />
+						<br />
+						<br />
+
+						<h3>5. Database Configuration Screen</h3>
+						<p>
+							Before adding the database configuration, ensure that the nd_pdo_mysql extension is
+							enabled in your PHP version. This extension is necessary for connecting to MySQL
+							databases using PDO (PHP Data Objects).
+						</p>
+						<img src="images/installation5.png" alt="image" />
+
+						<br /><br />
+
+						<h3>6. Database Connection Status</h3>
+						<p>
+							If the database connection is successfully established, it typically indicates this
+							through a confirmation message or status indicator, such as "Connection successful" or
+							a green checkmark icon.
+						</p>
+						<img src="images/installation6.png" alt="image" />
+
+						<br /><br />
+
+						<h3>7. Migration Files Loaded</h3>
+						<p>
+							After successfully establishing the database connection, the migration process begins,
+							transferring database tables to your database.
+						</p>
+						<img src="images/installation7.png" alt="image" />
+
+						<br /><br />
+
+						<h3>8. Final installation Screen</h3>
+						<p>
+							If everything is configured successfully then your Admin panel has been installed
+							successfully.You can login as Admin using the credentials provided here.
+						</p>
+						<img src="images/installation8.png" alt="image" />
+
+						<p>Thats it! Now you are ready to run your first Radio App</p>
+						<b>Default Login Details</b><br />
+						User: admin<br />
+						Pass: admin@123<br /><br />
+
+						<!-- Notification Management -->
+						<h3 id="settings">2. System Settings</h3>
+						<p>
+							The Settings Section allows Admin to customize key aspects of the application. From
+							changing basic information like app name, email, and timezone to personalizing visual
+							elements such as theme color, logo, and login page background image. Additionally,
+							admins can enable features like city mode, maintenance mode, and input FCM server key
+							for push notifications.
+						</p>
+						<video
+							style="width: 100%"
+							src="images/system_settings.webm"
+							alt="image"
+							controls></video>
+						<br />
+						<br />
+
+						<p>
+							After Changing System Settings Admin can change the Admin Panel Password from Profile
+							> Change Password.
+						</p>
+						<img src="images/changePassword.png" alt="image" />
+						<br />
+						<br />
+
+						<!-- Manage City -->
+						<h3 id="city">3. Manage City</h3>
+						<p>Admin can add city , edit city name, delete city and show list of cities,</p>
+						<img src="images/city.png" alt="image" />
+						<div class="section_bdr"></div>
+						<br />
+						<br />
+
+						<!-- Manage Category -->
+						<h3 id="category">4. Manage Category</h3>
+						<p>
+							Admin can create Category with Category Name & image. <br />
+							Image size must be less than 100kb.<br />
+							Admin can add, view, edit & delete the list of Categories.
+						</p>
+						<img src="images/category.png" alt="image" />
+						<div class="section_bdr"></div>
+						<br />
+						<br />
+
+						<!-- Manage Radio Station --->
+						<h3 id="radiostation">5. Manage Radio Station</h3>
+						<p>Admin can create Radio Station, view, edit & delete the list of Radio Station.</p>
+						<img src="images/radiostation.png" alt="image" />
+						<br />
+						<br />
+
+						<!-- Manage Slider -->
+						<h3 id="slider">6. Manage Slider</h3>
+						<p>
+							Create Slider with Category, Radio Station, Title & image. You can view, Edit & Delete
+							the list of Slider.
+						</p>
+						<img src="images/slider.png" alt="image" />
+						<div class="section_bdr"></div>
+						<br />
+						<br />
+
+						<!-- Notification Management -->
+						<h3 id="notification">7. Notification Management</h3>
+						<p>
+							First of all, admin need to set the FCM server key in System Settings<a
+								href="https://console.firebase.google.com"
+								target="_blank">
+								Firebase console</a
+							>
+						</p>
+						<img src="images/notification1.png" alt="image" />
+						<br />
+						<br />
+
+						<p>
+							After updating or setting up the FCM server key,<br />Notifications can be send to All
+							Users at a time to their respective email-id's
+						</p>
+						<img src="images/notification2.png" alt="image" />
+						<br />
+						<br />
+
+						<!-- Radio Station Report -->
+						<h3 id="radio-reports">8. Radio Station Report</h3>
+						<p>
+							In side the Radio Station report section you will able to see all the radio station
+							which are reported by the users.
+						</p>
+						<p>From here you can easily delete that report just by clicking on delete Icon.</p>
+						<img src="images/radiostationreport.png" />
+						<div class="section_bdr"></div>
+						<br />
+						<br />
+
+						<h3 id="pp">9. Set Privacy Policy</h3>
+						<p>Set Privacy Policy for your website and app.</p>
+						<img src="images/privacy.png" />
+						<div class="section_bdr"></div>
+						<br />
+						<br />
+
+						<h3 id="tc">10. Set Terms Conditions</h3>
+						<p>Set Terms Conditions for your website and app.</p>
+						<img src="images/termscondition.png" />
+						<div class="section_bdr"></div>
+						<br />
+						<br />
+
+						<h3 id="about_us">11. About Us Content</h3>
+						<p>Set and manage your about us content for app.</p>
+						<img src="images/aboutus.png" />
+						<br />
+						<br />
+					</div>
+				</section>
+
+				<section id="support">
+					<div class="container">
+						<h2>Need Help?</h2>
+						<p>
+							Our dedicated support team is here to assist you! Feel free to reach out with any
+							questions or concerns regarding our products.
+						</p>
+						<h5>Reach Us:</h5>
+						<p>
+							Skype:
+							<a href="https://join.skype.com/invite/qbmElsg7mSTd">Purnima Bhattacharya</a>
+						</p>
+						<h5>Support Hours:</h5>
+						<p>Monday - Friday: 9:00 AM - 6:00 PM IST (GMT+5:30)</p>
+						<h5>Typical Response Time:</h5>
+						<p>We strive to respond to all inquiries within 24 hours.</p>
+					</div>
+				</section>
+
+				<section id="rating">
+					<div class="container">
+						<br />
+						<h2>Rating</h2>
+						<p>
+							We greatly value your appreciation and feedback. Your positive input regarding our
+							product would be immensely valuable to us.
+						</p>
+						<p>
+							Taking just a brief 2-3 minutes of your time to review our product would be highly
+							appreciated. To begin, kindly click on the link provided below:
+						</p>
+						Link:
+						<a href="https://codecanyon.net/downloads"
+							>[Review Our Product] (https://codecanyon.net/downloads)</a
+						>
+						😊🌟
+
+						<div class="section_bdr"></div>
 					</div>
 				</section>
 			</div>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			<script type="text/javascript">
-				$(document).ready(function () {
-					$(window).scroll(function () {
-						if ($(this).scrollTop() > 100) {
-							$('.scrollup').fadeIn();
-						} else {
-							$('.scrollup').fadeOut();
-						}
-					});
-					$('.scrollup').click(function () {
-						$('html, body').animate({ scrollTop: 0 }, 600);
-						return false;
-					});
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>
+							<h3><span style="color: #b0506a">WRTeam</span></h3>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollzer.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('.scrollup').fadeIn();
+					} else {
+						$('.scrollup').fadeOut();
+					}
 				});
-			</script>
-			<div><a href="#" class="scrollup">Scroll</a></div>
-		</body>
-	</html>
-</em>
+				$('.scrollup').click(function () {
+					$('html, body').animate({ scrollTop: 0 }, 600);
+					return false;
+				});
+			});
+		</script>
+		<div><a href="#" class="scrollup">Scroll</a></div>
+	</body>
+</html>
