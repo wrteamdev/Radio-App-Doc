@@ -11,7 +11,7 @@
 		<body>
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/ic_launcher.webp" alt="Radio Online" /></span>
+					<span class="image avatar"><img src="images/ic_launcher.webp" /></span>
 					<h4 id="logo"><a href="#">Radio Online App Documentation</a></h4>
 				</header>
 				<nav id="nav">
@@ -29,7 +29,9 @@
 							>
 						</li>
 						<li><a href="#admob" style="color: #ff7c81">How to Setup Admob</a></li>
-						<li><a href="#rtl" style="color: #ff7c81">How to enable support for RTL in app</a></li>
+						<li>
+							<a href="#language" style="color: #ff7c81">How to change/app Language</a>
+						</li>
 						<li><a href="#apk" style="color: #ff7c81">How to Generate Release APK</a></li>
 						<li><a href="#support" style="color: #ff7c81">Support</a></li>
 					</ul>
@@ -86,7 +88,7 @@
 										>
 									</li>
 									<br />
-									<img src="images/setup.webp" alt="Radio Online" />
+									<img src="images/setup.webp" />
 									<br /><br />
 									<li>
 										Extract the zip file and copy flutter folder into your desired installation
@@ -97,7 +99,7 @@
 									<li>
 										Inside Flutter folder find flutter_console.bat. Start it by
 										double-clicking.<\li><br /><br />
-										<img src="images/setup2.webp" alt="Radio Online" />
+										<img src="images/setup2.webp" />
 										<br />
 									</li>
 
@@ -108,7 +110,7 @@
 									</li>
 
 									<br />
-									<img src="images/path.webp" alt="Radio Online" />
+									<img src="images/path.webp" />
 									<br /><br />
 
 									<li>Under User variables check if there is an entry called Path:</li>
@@ -117,16 +119,16 @@
 										flutter\bin as its value
 									</li>
 									<li>Now Restart your pc for changes to take effect</li>
-									<img src="images/path2.webp" alt="Radio Online" /><br /><br />
+									<img src="images/path2.webp" /><br /><br />
 									<li>Now check everything is ok or not</li>
 									<li>open cmd and do following shown in below picture</li>
 									<br />
-									<img src="images/check.webp" alt="Radio Online" /><br /><br />
+									<img src="images/check.webp" /><br /><br />
 									<li>
 										Now open Android Studio and create new flutter project then select your flutter
 										sdk file to the location where we have downloaded earlier and that's it
 									</li>
-									<br /><img src="images/flutter.webp" alt="Radio Online" /><br /><br />
+									<br /><img src="images/flutter.webp" /><br /><br />
 								</ol>
 								<div class="section_bdr"></div>
 							</div>
@@ -142,14 +144,14 @@
 										according to device screen size
 									</li>
 									<br />
-									<img src="images/app_change_android_logo.webp" alt="Radio Online" />
+									<img src="images/app_change_android_logo.webp" />
 									<br /><br />
 									<li>
 										For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset here you need
 										to put your logo according to diffrent size.
 									</li>
 									<br />
-									<img src="images/app_change_ios_logo.webp" alt="Radio Online" />
+									<img src="images/app_change_ios_logo.webp" />
 								</ol>
 								<div class="section_bdr"></div>
 							</div>
@@ -248,7 +250,7 @@
 										After performing this step you have to get your fcm server key from firebase
 										panel
 									</li>
-									<img src="images/noti_2.webp" alt="Radio Online" />
+									<img src="images/noti_2.webp" />
 									<li>And paste it into panel setting > Notification setting > Fcm Server key</li>
 									<img src="images/app_add_fcm_key.webp" />
 								</ol>
@@ -259,11 +261,8 @@
 						<section id="admob">
 							<h2>How to Setup Admob</h2>
 							<ol>
-								<li>
-									Open <code>lib/utility/constants.dart</code>, then you can add your Banner &
-									Interstitial Ad Ids for each platform as shown in the image.
-								</li>
-								<img src="images/app_add_admob_ids.webp" />
+								<li>Open Admin Panel > Settings > Admob Setting and add your Admob Ids</li>
+								<img src="images/add_admob_ad_ids.webp" />
 								<li>
 									After that, you will need to add your ad app id in for Android by going to
 									<code>android/app/src/main/AndroidManifest.xml</code>
@@ -275,13 +274,20 @@
 							<hr />
 						</section>
 
-						<section id="rtl">
-							<h2>How to enable support for RTL in app</h2>
+						<section id="language">
+							<h2>How to change/add Language</h2>
 							<p>
-								You can change the directionality of the app for RTL languages, as per your
-								requirement by going to <code>lib/utility/constants.dart</code>
+								You can change or language in the app as per your requirement by going to
+								<code>lib/utility/app_languages.dart</code>
 							</p>
-							<img src="images/app_change_rtl.webp" alt="Radio Online" /><br /><br />
+							<img src="images/add_change_language.webp" /><br /><br />
+							<ol>
+								<li>Add or Remove languages as per your requirement</li>
+								<li>Set the default language of the app</li>
+								<li>
+									Update the Translations or add new translations file based on the language code
+								</li>
+							</ol>
 							<hr />
 						</section>
 
@@ -296,7 +302,7 @@
 									</li>
 
 									<br />
-									<img src="images/apk1.webp" alt="Radio Online" /><br /><br />
+									<img src="images/apk1.webp" /><br /><br />
 
 									<li>
 										and if in your android studio if flutter option is disable then go to file
@@ -304,12 +310,12 @@
 										android module and open it.now generate relase apk from that new module.
 									</li>
 									<br />
-									<img src="images/apk2.webp" alt="Radio Online" /><br /><br />
-									<img src="images/apk3.webp" alt="Radio Online" /><br /><br />
+									<img src="images/apk2.webp" /><br /><br />
+									<img src="images/apk3.webp" /><br /><br />
 									<li>In Build menu there is option generate signed bundle/apk.</li>
 
 									<br />
-									<img src="images/apk4.webp" alt="Radio Online" /><br /><br />
+									<img src="images/apk4.webp" /><br /><br />
 								</ol>
 
 								<p></p>
@@ -326,9 +332,9 @@
 									team.
 								</p>
 								<p>
-									Head of Customer Support :
+									Customer Support :
 									<a
-										href="https://join.skype.com/invite/yBJSdYmXXLqX"
+										href="https://join.skype.com/invite/ufUntX3t1HXk"
 										target="_blank"
 										style="color: #3c55d1"
 										>Jay Parmar</a
