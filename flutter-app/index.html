@@ -2,38 +2,33 @@
 	<!DOCTYPE html>
 	<html>
 		<head>
-			<title>Documentation by "WRTeam"</title>
+			<title>Radio App - Documentation by WRTeam</title>
 			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-			<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="images/app_logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 		</head>
 
 		<body>
-			<section id="header">
+			<section id="header" style="overflow-y: auto; max-height: 100vh">
 				<header>
-					<span class="image avatar"><img src="images/ic_launcher.webp" /></span>
+					<span class="image avatar"><img src="images/app_logo.png" /></span>
 					<h4 id="logo"><a href="#">Radio Online App Documentation</a></h4>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#setup" style="color: #ff7c81">How to Setup Flutter</a></li>
-						<li><a href="#applogo" style="color: #ff7c81">How to Change App Logo</a></li>
-						<li><a href="#appname" style="color: #ff7c81">How to Change App Name</a></li>
-						<li><a href="#packagename" style="color: #ff7c81">How to Change Package Name</a></li>
-						<li><a href="#appcolors" style="color: #ff7c81">How to Change App Colors</a></li>
-						<li><a href="#images" style="color: #ff7c81">How to Change Images</a></li>
-						<li><a href="#api" style="color: #ff7c81">How to Change Base url</a></li>
-						<li>
-							<a href="#notification" style="color: #ff7c81"
-								>How to Integrate firebase push notification</a
-							>
-						</li>
-						<li><a href="#admob" style="color: #ff7c81">How to Setup Admob</a></li>
-						<li>
-							<a href="#language" style="color: #ff7c81">How to change/app Language</a>
-						</li>
-						<li><a href="#apk" style="color: #ff7c81">How to Generate Release APK</a></li>
-						<li><a href="#support" style="color: #ff7c81">Support</a></li>
+						<li><a href="#setup">How to Setup Flutter</a></li>
+						<li><a href="#applogo">How to Change App Logo</a></li>
+						<li><a href="#appname">How to Change App Name</a></li>
+						<li><a href="#packagename">How to Change Package Name</a></li>
+						<li><a href="#appcolors">How to Change App Colors</a></li>
+						<li><a href="#images">How to Change Images</a></li>
+						<li><a href="#api">How to Change Base url</a></li>
+						<li><a href="#notification">How to Integrate firebase push notification</a></li>
+						<li><a href="#admob">How to Setup Admob</a></li>
+						<li><a href="#language">How to change/app Language</a></li>
+						<li><a href="#apk">How to Generate Release APK</a></li>
+						<li><a href="#support">Support</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -130,7 +125,6 @@
 									</li>
 									<br /><img src="images/flutter.webp" /><br /><br />
 								</ol>
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -153,7 +147,6 @@
 									<br />
 									<img src="images/app_change_ios_logo.webp" />
 								</ol>
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -171,7 +164,6 @@
 									as shown in the image.
 								</p>
 								<img src="images/app_change_appname.webp" />
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -189,7 +181,6 @@
 								<h5>For IOS</h5>
 								<p>search, <code>com.app.radioonline</code></p>
 								<img src="images/app_change_ios_packagename.webp" />
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -205,7 +196,7 @@
 								when there is some issue loading colors from admin panel these colors will be used.
 							</p>
 							<img src="images/app_change_colors_app.webp" />
-							<hr />
+							
 						</section>
 
 						<section id="images">
@@ -221,7 +212,6 @@
 									<img src="images/app_change_images.webp" />
 									<br /><br />
 								</ol>
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -231,8 +221,7 @@
 								open <code>lib/utility/constants.dart</code> in there you can add your admin panel
 								url in baseUrl as shown in the image.
 							</p>
-							<img src="images/app_change_baseurl.webp" />
-							<hr />
+							<img src="images/app_change_baseurl.webp" />	
 						</section>
 
 						<section id="notification">
@@ -254,7 +243,6 @@
 									<li>And paste it into panel setting > Notification setting > Fcm Server key</li>
 									<img src="images/app_add_fcm_key.webp" />
 								</ol>
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -270,8 +258,7 @@
 								<img src="images/app_add_android_admob_id.webp" />
 								<li>And for IOS, by going to <code>ios/Runner/Info.plist</code></li>
 								<img src="images/app_add_ios_admob_id.webp" />
-							</ol>
-							<hr />
+							</ol>	
 						</section>
 
 						<section id="language">
@@ -288,7 +275,6 @@
 									Update the Translations or add new translations file based on the language code
 								</li>
 							</ol>
-							<hr />
 						</section>
 
 						<section id="apk">
@@ -319,7 +305,6 @@
 								</ol>
 
 								<p></p>
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -354,7 +339,6 @@
 									of time via comments, support forum or emails.
 								</p>
 
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 
@@ -366,7 +350,6 @@
 									If you like our app, we will highly appreciate if you can provide us a rating of
 									5. You can rate us from your CodeCanyon Menu > Download page.
 								</p>
-								<div class="section_bdr"></div>
 							</div>
 						</section>
 					</div>

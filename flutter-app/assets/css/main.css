@@ -2688,7 +2688,7 @@ input[type='button']:disabled,
 /* Header */
 
 #header {
-	background: #ff7c81;
+	background: #b0506a;
 	color: #01579b;
 	height: 100%;
 	position: fixed;
@@ -2826,6 +2826,7 @@ input[type='button']:disabled,
 #main > section img {
 	width: 100%;
 	height: auto;
+	border: 2px solid grey;
 }
 
 #main > section > .container {

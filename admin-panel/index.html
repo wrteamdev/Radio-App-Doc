@@ -19,11 +19,12 @@
 					<li><a href="#installation">Installation Steps</a></li>
 					<li><a href="#settings">System Settings</a></li>
 					<li><a href="#app-settings">App Settings</a></li>
+                    <li><a href="#abmob-settings">Admob Settings</a></li>
 					<li><a href="#city">Manage City</a></li>
 					<li><a href="#category">Manage Category</a></li>
 					<li><a href="#radiostation">Manage Radio Station</a></li>
 					<li><a href="#slider">Manage Slider</a></li>
-					<li><a href="#notification">Notification Management</a></li>
+					<li><a href="#notification">Notification Settings</a></li>
 					<li><a href="#radio-reports">Radio Station Report</a></li>
 					<li><a href="#pp">Set Privacy Policy</a></li>
 					<li><a href="#tc">Set Terms Conditions</a></li>
@@ -182,96 +183,136 @@
 							You can add the published app links here and also if you want to enable/disable the
 							force update, maintenance mode.
 						</p>
-						<img src="images/app_settings.webp" />
+						<img src="images/app_settings.png" />
 						<br />
 						<br />
 
+                        <!-- Admob Settings -->
+                        <h3 id="abmob-settings">4. AdMob Settings</h3>
+						<p>
+							AdMob settings help you manage and optimize ad placements in your mobile apps, enhancing revenue while ensuring a smooth user experience. Key features include ad unit configuration, targeting, and performance tracking.
+						</p>
+						<img src="images/admob_settings.png" />
+						<br />
+						<br />
 						<!-- Manage City -->
-						<h3 id="city">3. Manage City</h3>
+						<h3 id="city">5. Manage City</h3>
 						<p>Admin can add city , edit city name, delete city and show list of cities,</p>
 						<img src="images/city.png" />
-						<div class="section_bdr"></div>
+					
 						<br />
 						<br />
 
 						<!-- Manage Category -->
-						<h3 id="category">4. Manage Category</h3>
+						<h3 id="category">6. Manage Category</h3>
 						<p>
 							Admin can create Category with Category Name & image. <br />
 							Image size must be less than 100kb.<br />
 							Admin can add, view, edit & delete the list of Categories.
 						</p>
 						<img src="images/category.png" />
-						<div class="section_bdr"></div>
+						
 						<br />
 						<br />
 
 						<!-- Manage Radio Station --->
-						<h3 id="radiostation">5. Manage Radio Station</h3>
+						<h3 id="radiostation">7. Manage Radio Station</h3>
 						<p>Admin can create Radio Station, view, edit & delete the list of Radio Station.</p>
 						<img src="images/radiostation.png" />
 						<br />
 						<br />
 
 						<!-- Manage Slider -->
-						<h3 id="slider">6. Manage Slider</h3>
+						<h3 id="slider">8. Manage Slider</h3>
 						<p>
 							Create Slider with Category, Radio Station, Title & image. You can view, Edit & Delete
 							the list of Slider.
 						</p>
 						<img src="images/slider.png" />
-						<div class="section_bdr"></div>
+					
 						<br />
 						<br />
 
 						<!-- Notification Management -->
-						<h3 id="notification">7. Notification Management</h3>
-						<p>
-							First of all, admin need to set the FCM server key in System Settings<a
-								href="https://console.firebase.google.com"
-								target="_blank">
-								Firebase console</a
-							>
+						<h3 id="notification">9. Notification Management</h3>
+						<p>Now, Sender Id will be used for sending App Notification.
+                            <a href="https://console.firebase.google.com" target="_blank">Firebase console</a>
 						</p>
 						<img src="images/notification1.png" />
 						<br />
 						<br />
+                        <ul>
+                           <h5><li>Sender Id</li></h5>
+                            <br>
+                            <p>1. In the Firebase console, go to Project Settings.</p>
+                            <p>2. From Cloud Messaging tab check the Firebase Cloud Messaging API (V1) where Sender Id is
+                                given, add that to Admin Panel in System Settings > Notification Setting.</p>
 
+                            <img src="images/firebase_sender_id.png" alt="image">
+                            <br>
+    
+                           
+    
+                                
+                            <h5><li>Firebase Project Id</li></h5>
+                            <br>
+                            <p>1. In the Firebase console, go to Project Settings</p>
+                            <p>2. Go to > General where Project Id is given add that to Admin Panel in System Settings >
+                                Notification Setting.</p>
+
+                            <img src="images/firebase_project_id.png" alt="image">
+                             <br>   
+    
+                          
+    
+                            <h5><li>Service Json File</li></h5>
+                            <br>
+                            <p>1. In the Firebase console, open Settings > Service Accounts.</p>
+                            <p>2. Click Generate New Private Key, then confirm by clicking Generate Key.</p>
+                            <p>3. Securely store the JSON file containing the key and upload in Admin Panel in System
+                                Settings > Notification Setting.</p>
+                                
+                            <img src="images/firebase_service_file.png" alt="image">
+                            <br>
+    
+                          
+                        </ul>
+                       
 						<p>
-							After updating or setting up the FCM server key,<br />Notifications can be send to All
-							Users at a time to their respective email-id's
+							After updating or setting up the Notification settings,<br />Notifications can be send to All
+							Users at a time to their respective fcm-id's
 						</p>
 						<img src="images/notification2.png" />
 						<br />
 						<br />
 
 						<!-- Radio Station Report -->
-						<h3 id="radio-reports">8. Radio Station Report</h3>
+						<h3 id="radio-reports">10. Radio Station Report</h3>
 						<p>
 							In side the Radio Station report section you will able to see all the radio station
 							which are reported by the users.
 						</p>
 						<p>From here you can easily delete that report just by clicking on delete Icon.</p>
 						<img src="images/radiostationreport.png" />
-						<div class="section_bdr"></div>
+					
 						<br />
 						<br />
 
-						<h3 id="pp">9. Set Privacy Policy</h3>
+						<h3 id="pp">11. Set Privacy Policy</h3>
 						<p>Set Privacy Policy for your website and app.</p>
 						<img src="images/privacy.png" />
-						<div class="section_bdr"></div>
+						
 						<br />
 						<br />
 
-						<h3 id="tc">10. Set Terms Conditions</h3>
+						<h3 id="tc">12. Set Terms Conditions</h3>
 						<p>Set Terms Conditions for your website and app.</p>
 						<img src="images/termscondition.png" />
-						<div class="section_bdr"></div>
+						
 						<br />
 						<br />
 
-						<h3 id="about_us">11. About Us Content</h3>
+						<h3 id="about_us">13. About Us Content</h3>
 						<p>Set and manage your about us content for app.</p>
 						<img src="images/aboutus.png" />
 						<br />
@@ -316,7 +357,6 @@
 						>
 						😊🌟
 
-						<div class="section_bdr"></div>
 					</div>
 				</section>
 			</div>
