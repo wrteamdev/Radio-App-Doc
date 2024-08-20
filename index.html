@@ -5,7 +5,7 @@
     <title>Radio Online - Flutter Full App
 
     </title>
-    <link rel="shortcut icon" href="images/app_icon.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="images/app_logo.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,25 +18,34 @@
 
     <style>
         .background {
-            background-color: #fec3d1;
-            color: #25396F;
+            background-color: #b0506a;
+            color: #ffffff;
         }
 
         .button {
             display: inline-block;
             border-radius: 4px;
-            background-color: #fec3d1;
+            background-color: #b0506ade;
             border: none;
-            color: #25396F;
+            color: #ffffff;
             text-align: center;
             font-size: 28px;
             height: 120px;
             padding: 20px;
-            width: 200px;
-            transition: all 0.5s;
+            width: 300px;
+            transition: transform 0.5s;
             cursor: pointer;
-            margin: 5px;
+            margin: 20px;
+
         }
+
+        .button:hover{
+            background-color: #b0506a;
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.1); 
+        }
+
 
         .button span {
             cursor: pointer;
@@ -68,6 +77,9 @@
             height: 100px;
             object-fit: contain;
             max-width: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 25px;
         }
 
         .center {
@@ -106,7 +118,7 @@
             <table class="table">
                 <thead>
                     <tr class="header">
-                        <th><img src="images/app_icon.webp" class="logo" alt="Radio Online - Flutter Full App">
+                        <th><img src="images/app_logo.png" class="logo" alt="Radio Online - Flutter Full App">
                         </th>
                         <th style="vertical-align: middle;">
                             <h2 style="font-weight: bolder;">

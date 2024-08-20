@@ -2790,6 +2790,7 @@ input[type='button']:disabled,
 	transition: none;
 	border: 0;
 	color: #ffffff !important;
+	background-color: #b0506a;
 	display: block;
 	padding: 7px 0;
 	text-decoration: none;
